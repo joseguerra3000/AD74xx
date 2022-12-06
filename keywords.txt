@@ -1,0 +1,36 @@
+#######################################
+# Syntax Coloring Map
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+AD74xx_TYPE	KEYWORD1
+AD74xx KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin						KEYWORD2
+getResolution		KEYWORD2
+powerDown				KEYWORD2
+powerUp					KEYWORD2
+getRawValue			KEYWORD2
+getVoltage			KEYWORD2
+
+######################################
+# Constants (LITERAL1)
+#######################################
+AD7466					LITERAL1
+AD7467					LITERAL1
+AD7468					LITERAL1
+AD7475					LITERAL1
+AD7476					LITERAL1
+AD7476A					LITERAL1
+AD7477					LITERAL1
+AD7477A 				LITERAL1
+AD7478					LITERAL1
+AD7478A 				LITERAL1
+AD7495					LITERAL1
