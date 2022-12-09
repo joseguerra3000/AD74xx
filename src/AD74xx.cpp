@@ -21,6 +21,8 @@ bool AD74xx::begin( SPIClass *spi, int8_t cs ){
 
   if( m_spi != nullptr )
     return true;
+
+  return true;
 }
 
 bool AD74xx::begin( SPIClass &spi, int8_t cs ){
@@ -62,6 +64,8 @@ bool AD74xx::begin( SPIClass *spi, uint8_t miso, uint8_t sclk, uint8_t cs ){
 bool AD74xx::begin( SPIClass &spi, uint8_t miso, uint8_t sclk, uint8_t cs ){
   return begin( &spi, miso, sclk, cs );
 }
+#endif
+
 
 inline int8_t AD74xx::getResolution(){
 
@@ -85,6 +89,7 @@ inline int8_t AD74xx::getResolution(){
     return 8;
   
   default:
+    return 0; // invalid
     break;
   }
 
@@ -150,5 +155,4 @@ float AD74xx::getVoltage( float vref ){
 }
 
 
-#endif
 
